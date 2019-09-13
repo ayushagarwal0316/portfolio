@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Portfolio - Raspberry Pi Camera</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Ayush Agarwal's Projects</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="generic.html">Ipsum veroeros</a></li>
+							<li><a href="generic.html">Tempus etiam</a></li>
+							<li><a href="generic.html">Consequat dolor</a></li>
+							<li><a href="elements.html">Elements</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Raspberry Pi Wireless Camera System</h1>
+							<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
+							<h3>What is it?</h3>
+							<p>Following our success at HackUTD, I was fortunate enough to land a project to further develop my skills as a programmer. I was to develop a system which could wirelessly display a camera feed, but with no separate internet connection.</p>
+							<p><span class="image right"><img src="images/pic14.jpg" alt="" /></span>I had very little experience with python programs, and had only used Raspberry pi as a personal home media system, so the entire project was incredibly daunting. This necessitated me to research and understand what would be the best possible solution for the problem, and initially, I created the system using an open source project named MotionEyeOS. When I implemented this software however, I was met with multi-second latency and very low resolution images, forcing me to dive deeper in the world of python programming. I eventually found a protocal called mJPEG, which allowed for streaming to a website via python's http.server module. From there it took some more research to create scripts to run the programs on boot, and to get the correct network configuration setup. The next steps are to streamline the OS, and we plan on developing a dedicated chipset and creating a full fledged product.</p>
+							<h3>What I've learned</h3>
+							<p>The project taught me a lot about python, as I had to research and learn about creating an mjpeg stream to a host, learn about IP addresses to best setup the network configuration, while also teaching me about linux and scripting to automate the programs to run on boot.</p>
+							<h3>What I used</h3>
+							<ul class="alt">
+								<li><a href="https://picamera.readthedocs.io/en/latest/index.html"><b>Raspberry Picamera</b></a> libraries</li>
+								<li>IP address and network configuration knowledge </li>
+								<li><b>Python</b> programming to create streaming server</li>
+								<li><a href="https://github.com/ccrisan/motioneyeos"><b>MotionEyeOS</b></a></li>
+								<li><b>Linux</b> scripting to run programs on boot</li>
+							</ul>
+
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
