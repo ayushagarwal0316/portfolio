@@ -1,137 +1,144 @@
 <!DOCTYPE HTML>
 <!--
-	Phantom by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Phantom by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Generic - Phantom by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper">
+<head>
+	<title>Ayush Agarwal</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
 
-							<!-- Logo -->
-								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
-								</a>
+				<!-- Logo -->
+				<a href="index.html" class="logo">
+					<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Portfolio</span>
+				</a>
 
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
+				<!-- Nav -->
+				<nav>
+					<ul>
+						<li><a href="#menu">Menu</a></li>
+					</ul>
+				</nav>
 
-						</div>
-					</header>
+			</div>
+		</header>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="generic.html">Ipsum veroeros</a></li>
-							<li><a href="generic.html">Tempus etiam</a></li>
-							<li><a href="generic.html">Consequat dolor</a></li>
-							<li><a href="elements.html">Elements</a></li>
+		<!-- Menu -->
+		<nav id="menu">
+			<h2>Menu</h2>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="generic.html">Ipsum veroeros</a></li>
+				<li><a href="generic.html">Tempus etiam</a></li>
+				<li><a href="generic.html">Consequat dolor</a></li>
+				<li><a href="elements.html">Elements</a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+				<span class="image left"><img src="images/inner/cometHelper/cometHelperLogo.png" alt="" /></span><h2>Inspiration</h2>
+				<p>As a group of four students who live on campus, we always found ourselves manually searching up information on Google about UTD. It was tedious to try and look through the app and going to the UTD webpage. We constantly searched things such as when dining options were open, where to go to find a quiet, empty study room, parking availability, and important calendar dates, but never had an easy way to find these items. Always having to open an internet browser and search for links and information should not be necessary to get basic information on campus. To solve these problems we created an Alexa Skill which answers many questions about UTD, and helps make life better around campus.</p>
+
+				<h2>What it does</h2>
+
+				<p>The Comet Helper skill has the ability to search for open rooms throughout the campus, and provide the user with that list. The search can be performed on individual buildings, with set time and dates, along with floor searches. The skill also can provide the user with the number of open parking spaces currently available around the campus, at parking structures with live parking data being web scraped by a back-end node.js program. Another function of the skill is the time feature, which can tell the user the operating hours for many dining options and some campus offices. This feature is also expanded by the calendar functionality, which provides many important dates features on the UTD Academic Calendar.</p>
+
+				<h2>How we built it</h2>
+
+				<p><span class="image right"><img src="images/inner/cometHelper/meExplaining.jpg" alt="" /></span>We divided into two teams, one focusing on web scraping for the room and parking data, and the other working with AWS Lambda and the Alexa Developer Console to interpret that data into the Voice UI.
+					We created a Lambda function which was where the app did all of its processing, interpreting the data for the skill to best aide the user. The Lambda function connected to the Alexa Developer Console, which provided the list of intents and slots for the user to invoke when calling the skill and saying a command.
+					The web scraper was also built in node.js to run on the Lambda function to streamline the workflow and parses through an HTML file to acquire the room availability and parking data.</p>
+
+					<h2>Challenges we ran into</h2>
+
+					<p>We had multiple difficulties with the web scraper, mainly due to our lack of experience in node.js and HTML as we challenged ourselves with a high-level project.
+						Building the Alexa skill had some challenges as well, also due to our unfamiliarity with node.js and the AWS workflow, especially with setting up the correct index.js function.</p>
+
+						<h2>Accomplishments that we're proud of</h2>
+
+						<p><span class="image right"><img src="images/inner/cometHelper/standing.jpg" alt="" /></span>The Alexa skill is functioning, which was a great accomplishment in itself as we are unfamiliar with the syntax and flow of operations. We were also able to webscrape information off of a simple website as a test case.</p>
+
+						<h2>What we learned</h2>
+
+						<p>As a group we built our individual node.js skills, either through building the Lambda function or the web scraping tool, it was still an amazing learning experience.</p>
+
+						<h2>What's next for Comet Helper</h2>
+
+						<p>In the future, we will look to add other important information to our Alexa Skill, such as event information concerning the music program to the athletics program here on campus.</p>
+
+						<h2>What I used</h2>
+						<ul class="alt">
+							<li><a href="https://developer.amazon.com/alexa/console"><b>Amazon Alexa</b></a> console</li>
+							<li>Node.js serverless skill</li>
+							<li><a href="https://console.aws.amazon.com/lambda"><b>Amazon Lambda</b></a> for function trigger</li>
+							<li><b>Node.js </b>webscraper</a></li>
 						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-	<span class="image left"><img src="images/pic14.jpg" alt="" /></span><h2>Inspiration</h2>
-	<p>As a group of four students who live on campus, we always found ourselves manually searching up information on Google about UTD. It was tedious to try and look through the app and going to the UTD webpage. We constantly searched things such as when dining options were open, where to go to find a quiet, empty study room, parking availability, and important calendar dates, but never had an easy way to find these items. Always having to open an internet browser and search for links and information should not be necessary to get basic information on campus. To solve these problems we created an Alexa Skill which answers many questions about UTD, and helps make life better around campus.</p>
-
-	<h2>What it does</h2>
-
-	<p>The Comet Helper skill has the ability to search for open rooms throughout the campus, and provide the user with that list. The search can be performed on individual buildings, with set time and dates, along with floor searches. The skill also can provide the user with the number of open parking spaces currently available around the campus, at parking structures with live parking data being web scraped by a back-end node.js program. Another function of the skill is the time feature, which can tell the user the operating hours for many dining options and some campus offices. This feature is also expanded by the calendar functionality, which provides many important dates features on the UTD Academic Calendar.</p>
-
-	<h2>How we built it</h2>
-
-	<p>We divided into two teams, one focusing on web scraping for the room and parking data, and the other working with AWS Lambda and the Alexa Developer Console to interpret that data into the Voice UI.
-	We created a Lambda function which was where the app did all of its processing, interpreting the data for the skill to best aide the user. The Lambda function connected to the Alexa Developer Console, which provided the list of intents and slots for the user to invoke when calling the skill and saying a command.
-	The web scraper was also built in node.js to run on the Lambda function to streamline the workflow and parses through an HTML file to acquire the room availability and parking data.</p>
-
-	<h2>Challenges we ran into</h2>
-
-	<p>We had multiple difficulties with the web scraper, mainly due to our lack of experience in node.js and HTML as we challenged ourselves with a high-level project.
-	Building the Alexa skill had some challenges as well, also due to our unfamiliarity with node.js and the AWS workflow, especially with setting up the correct index.js function.</p>
-
-	<h2>Accomplishments that we're proud of</h2>
-
-	<p>The Alexa skill is functioning, which was a great accomplishment in itself as we are unfamiliar with the syntax and flow of operations. We were also able to webscrape information off of a simple website as a test case.</p>
-
-	<h2>What we learned</h2>
-
-	<p>As a group we built our individual node.js skills, either through building the Lambda function or the web scraping tool, it was still an amazing learning experience.</p>
-
-	<h2>What's next for Comet Helper</h2>
-
-	<p>In the future, we will look to add other important information to our Alexa Skill, such as event information concerning the music program to the athletics program here on campus.</p>
-
-	</div>
 					</div>
+				</div>
 
 				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<section>
-								<h2>Get in touch</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<input type="text" name="name" id="name" placeholder="Name" />
-										</div>
-										<div class="field half">
-											<input type="email" name="email" id="email" placeholder="Email" />
-										</div>
-										<div class="field">
-											<textarea name="message" id="message" placeholder="Message"></textarea>
-										</div>
+				<footer id="footer">
+					<div class="inner">
+						<section>
+							<h2>Get in touch</h2>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field half">
+										<input type="text" name="name" id="name" placeholder="Name" />
 									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send" class="primary" /></li>
-									</ul>
-								</form>
-							</section>
-							<section>
-								<h2>Follow</h2>
-								<ul class="icons">
-									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
-									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
-									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+									<div class="field half">
+										<input type="email" name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="field">
+										<textarea name="message" id="message" placeholder="Message"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send" class="primary" /></li>
 								</ul>
-							</section>
-							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</form>
+						</section>
+						<section>
+							<h2>Follow</h2>
+							<ul class="icons">
+								<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+								<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
+								<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+								<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
 							</ul>
-						</div>
-					</footer>
+						</section>
+						<ul class="copyright">
+							<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</footer>
 
 			</div>
 
-		<!-- Scripts -->
+			<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-	</body>
-</html>
+		</body>
+		</html>
